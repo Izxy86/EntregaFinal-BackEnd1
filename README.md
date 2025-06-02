@@ -24,7 +24,7 @@ Este proyecto es la **entrega final del curso de Backend** de Coderhouse. Parte 
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/backend-entrega-final.git
+   git clone https://github.com/Izxy86/EntregaFinal-BackEnd1.git
    cd backend-entrega-final
    ```
 
