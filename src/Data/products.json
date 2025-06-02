@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop Lenovo ThinkPad",
+    "description": "Portátil empresarial con procesador Intel i7 y 16GB RAM",
+    "price": 1200,
+    "thumbnail": "images/lenovo-thinkpad.jpg",
+    "code": "LP1001",
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "title": "Mouse Logitech MX Master 3",
+    "description": "Mouse inalámbrico ergonómico para productividad",
+    "price": 100,
+    "thumbnail": "images/logitech-mxmaster3.jpg",
+    "code": "MO2002",
+    "stock": 25
+  },
+  {
+    "id": 3,
+    "title": "Monitor Dell UltraSharp 27",
+    "description": "Monitor 4K UHD con precisión de color para diseño gráfico",
+    "price": 500,
+    "thumbnail": "images/dell-ultrasharp27.jpg",
+    "code": "MN3003",
+    "stock": 15
+  },
+  {
+    "id": 4,
+    "title": "Teclado Mecánico Corsair K95",
+    "description": "Teclado mecánico RGB con switches Cherry MX",
+    "price": 180,
+    "thumbnail": "images/corsair-k95.jpg",
+    "code": "KB4004",
+    "stock": 20
+  },
+  {
+    "id": 5,
+    "title": "Auriculares Sony WH-1000XM4",
+    "description": "Auriculares inalámbricos con cancelación de ruido",
+    "price": 350,
+    "thumbnail": "images/sony-wh1000xm4.jpg",
+    "code": "AU5005",
+    "stock": 30
+  },
+  {
+    "id": 6,
+    "title": "Monitor LG 24",
+    "description": "Monitor Full HD 24 pulgadas",
+    "code": "MONLG24",
+    "price": 200,
+    "status": true,
+    "stock": 12,
+    "category": "Monitores",
+    "thumbnails": [
+      "images/lg24-front.jpg",
+      "images/lg24-back.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Auriculares inalámbricos",
+    "description": "Bluetooth, cancelación de ruido",
+    "code": "AUR123",
+    "price": 25000,
+    "status": true,
+    "stock": 50,
+    "category": "audio",
+    "thumbnails": [
+      "imagen1.jpg",
+      "imagen2.jpg"
+    ]
+  }
+]

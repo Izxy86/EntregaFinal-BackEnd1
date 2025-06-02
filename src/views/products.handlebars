@@ -1,0 +1,42 @@
+<h1 class="products-title">Listado de Productos</h1>
+<pre>
+  {{!-- DEBUG OUTPUT --}}
+  {{log this}}
+</pre>
+
+
+<div class="products-grid">
+  {{#each products}}
+    <div class="product-card">
+      <h3><a href="/products/{{_id}}">{{title}}</a></h3>
+
+      <p><strong>Descripción:</strong> {{description}}</p>
+      <p><strong>Precio:</strong> ${{price}}</p>
+      <p><strong>Categoría:</strong> {{category}}</p>
+      <p><strong>Stock:</strong> {{stock}}</p>
+
+      {{#if thumbnails.[0]}}
+        <img src="{{thumbnails.[0]}}" alt="{{title}}" width="100">
+      {{/if}}
+
+      <form action="/api/carts/683e08bb2421dd9ffb8a6d97/product/{{_id}}" method="POST">
+        <button type="submit">Agregar al carrito</button>
+      </form>
+
+    </div>
+  {{/each}}
+</div>
+
+<div class="pagination">
+  {{#if hasPrevPage}}
+    <a href="/products?page={{prevPage}}">⬅ Anterior</a>
+  {{/if}}
+
+  <span>Página {{page}}</span>
+
+  {{#if hasNextPage}}
+    <a href="/products?page={{nextPage}}">Siguiente ➡</a>
+  {{/if}}
+</div>
+
+

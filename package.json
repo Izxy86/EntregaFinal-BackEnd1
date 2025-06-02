@@ -1,0 +1,34 @@
+{
+    "name": "users-manager",
+    "version": "1.0.0",
+    "description": "Gestión básica de usuarios usando fs.promises en Node.js",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Izxy86/EntregaTp1.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Izxy86/EntregaTp1/issues"
+    },
+    "homepage": "https://github.com/Izxy86/EntregaTp1#readme",
+    "dependencies": {
+        "@handlebars/allow-prototype-access": "^1.0.5",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "express-handlebars": "^8.0.2",
+        "mongodb": "^6.16.0",
+        "mongoose": "^8.15.1",
+        "mongoose-paginate-v2": "^1.9.1",
+        "socket.io": "^4.8.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
+}

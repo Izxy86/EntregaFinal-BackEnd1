@@ -1,0 +1,24 @@
+<h1>Carrito</h1>
+
+{{#if cart.products.length}}
+  <ul>
+    {{#each cart.products}}
+      <li>
+        <strong>{{this.product.title}}</strong><br>
+        Descripción: {{this.product.description}}<br>
+        Precio: ${{this.product.price}}<br>
+        Cantidad: {{this.quantity}}<br>
+        <form method="POST" action="/cart/{{../cart._id}}/remove/{{this.product._id}}">
+          <button type="submit">Eliminar</button>
+        </form>
+      </li>
+      <hr>
+    {{/each}}
+  </ul>
+
+  <form method="POST" action="/cart/{{cart._id}}/clear">
+    <button type="submit">Vaciar carrito</button>
+  </form>
+{{else}}
+  <p>El carrito está vacío.</p>
+{{/if}}

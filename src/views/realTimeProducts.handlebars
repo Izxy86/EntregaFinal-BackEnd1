@@ -1,0 +1,35 @@
+<h1>Productos en tiempo real</h1>
+
+<form id="product-form">
+    <input type="text" name="title" placeholder="Título" required>
+    <input type="text" name="description" placeholder="Descripción" required>
+    <input type="text" name="code" placeholder="Código" required>
+    <input type="number" name="price" placeholder="Precio" required>
+    <input type="number" name="stock" placeholder="Stock" required>
+    <input type="text" name="category" placeholder="Categoría" required>
+    <button type="submit">Agregar</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th><th>Título</th><th>Precio</th><th>Stock</th><th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="product-list">
+        {{#each products}}
+        <tr data-id="{{this.id}}">
+            <td>{{this.id}}</td>
+            <td>{{this.title}}</td>
+            <td>${{this.price}}</td>
+            <td>{{this.stock}}</td>
+            <td><button class="delete-btn" data-id="{{this.id}}">Eliminar</button></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+{{!-- scripts --}}
+{{#*inline "scripts"}}
+<script src="/js/realtime.js"></script>
+{{/inline}}
